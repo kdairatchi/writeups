@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"os"
 	"sort"
@@ -51,7 +51,7 @@ const (
 // Environment variables for configuration
 var (
 	maxFeeds     = getEnvInt("MAX_FEEDS", 0) // 0 means no limit
-	requestDelay = getEnvDuration("RATE_LIMIT_DELAY", 3) * time.Second
+	requestDelay = getEnvDuration("RATE_LIMIT_DELAY", 3)
 	debugMode    = getEnvBool("DEBUG_MODE", false)
 )
 
@@ -155,10 +155,10 @@ func getEnvInt(key string, defaultValue int) int {
 func getEnvDuration(key string, defaultSeconds int) time.Duration {
 	if value := os.Getenv(key); value != "" {
 		if intValue, err := strconv.Atoi(value); err == nil {
-			return time.Duration(intValue)
+			return time.Duration(intValue) * time.Second
 		}
 	}
-	return time.Duration(defaultSeconds)
+	return time.Duration(defaultSeconds) * time.Second
 }
 
 func getEnvBool(key string, defaultValue bool) bool {
@@ -177,7 +177,7 @@ func getCurrentDateGMT() string {
 }
 
 func readREADME() string {
-	content, err := ioutil.ReadFile(readmeFilename)
+	content, err := os.ReadFile(readmeFilename)
 	if err != nil && !os.IsNotExist(err) {
 		printWarning(fmt.Sprintf("Error reading %s: %v", readmeFilename, err))
 		return ""
@@ -867,7 +867,7 @@ func fetchRSSFeed(url string) (*RSS, error) {
 		return nil, fmt.Errorf("HTTP %d", resp.StatusCode)
 	}
 
-	data, err := ioutil.ReadAll(resp.Body)
+	data, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return nil, fmt.Errorf("read error")
 	}
@@ -1512,7 +1512,7 @@ func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []
 </html>`
 
 	// Write HTML file
-	err := ioutil.WriteFile(indexFilename, []byte(htmlContent), 0644)
+	err := os.WriteFile(indexFilename, []byte(htmlContent), 0644)
 	if err != nil {
 		printWarning(fmt.Sprintf("Failed to write %s: %v", indexFilename, err))
 	} else {

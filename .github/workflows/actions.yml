@@ -45,7 +45,7 @@ permissions:
 
 # Global environment variables
 env:
-  GO_VERSION: '1.23.4'
+  GO_VERSION: '1.22'
   TIMEZONE: 'UTC'
   MAX_RETRIES: 2
   RATE_LIMIT_DELAY: 8
