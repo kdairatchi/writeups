@@ -5,35 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Medium Writeups Library</title>
   <meta name="description" content="Bug bounty reports, writeups, and Medium feed library.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="hero">
-    <p class="eyebrow">Medium-Writeups Library</p>
-    <h1>Three clear research areas: reports, writeups, and Medium methodology search.</h1>
-    <p class="subhead">
-      Built for GitHub Pages: static, fast, and backed by <code>MANIFEST.json</code> so counts and source descriptions stay in one place.
-    </p>
-    <div class="hero-actions">
-      <a class="button primary" href="#areas">Browse Areas</a>
-      <a class="button ghost" href="MANIFEST.json">View Manifest JSON</a>
+  <div class="page-glow page-glow-1" aria-hidden="true"></div>
+  <div class="page-glow page-glow-2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark"></span>
+        <span>Medium-Writeups</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#areas">Areas</a>
+        <a href="#library">Library</a>
+        <a href="reports/">Reports</a>
+        <a href="writeups/">Writeups</a>
+      </nav>
+      <a class="button ghost compact" href="MANIFEST.json">Manifest</a>
     </div>
+  </header>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">GitHub Pages research console</p>
+      <h1>Reports, writeups, Medium notes, and search in one static command center.</h1>
+      <p class="subhead">
+        The root page stays lightweight for GitHub Pages while <code>MANIFEST.json</code> drives live counts, source breakdowns, and browser-side filtering.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#areas">Browse Areas</a>
+        <a class="button ghost" href="#library">Open Searchable Library</a>
+      </div>
+      <div class="hero-inline-meta">
+        <span class="inline-chip">Static deploy</span>
+        <span class="inline-chip">Manifest-backed</span>
+        <span class="inline-chip">Auto-refreshed feed</span>
+      </div>
+    </div>
+    <aside class="hero-panel" aria-label="Project status">
+      <div class="terminal-card">
+        <div class="terminal-top">
+          <span class="terminal-dot"></span>
+          <span class="terminal-dot"></span>
+          <span class="terminal-dot"></span>
+          <p>library status</p>
+        </div>
+        <div class="terminal-body">
+          <p><span>$</span> github-pages source</p>
+          <strong>main / root / static</strong>
+          <p><span>$</span> manifest sync</p>
+          <strong id="sync-status">loading...</strong>
+          <p><span>$</span> indexed files</p>
+          <strong id="hero-total-files">-</strong>
+        </div>
+      </div>
+      <div class="hero-note">
+        <p class="note-label">Pages signal</p>
+        <p>Root <code>index.html</code> plus <code>.nojekyll</code> keeps the site deployable without a build step.</p>
+      </div>
+    </aside>
   </header>
 
   <main>
     <section class="stats-grid" aria-label="Library overview">
       <article class="stat-card">
-        <h2>Reports</h2>
+        <p class="stat-label">Reports</p>
         <p class="value" id="reports-total">-</p>
         <p class="meta">Mirrored disclosed reports</p>
       </article>
       <article class="stat-card">
-        <h2>Writeups</h2>
+        <p class="stat-label">Writeups</p>
         <p class="value" id="writeups-total">-</p>
         <p class="meta">Writeups and methodology corpus</p>
       </article>
       <article class="stat-card">
-        <h2>Total Files</h2>
+        <p class="stat-label">Total Files</p>
         <p class="value" id="all-total">-</p>
         <p class="meta">All mirrored + generated assets</p>
       </article>
@@ -44,6 +95,7 @@
         <p class="card-kicker">Area 1</p>
         <h3>Reports</h3>
         <p>Disclosed report exports from Google VRP, HackerOne, and Immunefi datasets.</p>
+        <p class="card-detail">High-volume mirrored datasets for trend review, triage patterns, and disclosed bug study.</p>
         <div class="card-links">
           <a href="reports/">Open reports hub</a>
           <a href="reports/INDEX.md">Source table</a>
@@ -53,6 +105,7 @@
         <p class="card-kicker">Area 2</p>
         <h3>Writeups</h3>
         <p>Curated writeup collections and daily/vertical notes for repeatable patterns.</p>
+        <p class="card-detail">Focused reading lists, platform-specific notes, and reusable methodology fragments.</p>
         <div class="card-links">
           <a href="writeups/">Open writeups hub</a>
           <a href="writeups/INDEX.md">Source table</a>
@@ -62,9 +115,67 @@
         <p class="card-kicker">Area 3</p>
         <h3>Medium / Methodology / Searchable Library</h3>
         <p>The third user-facing area combines the generated Medium feed, methodology notes, and browser-side source filtering.</p>
+        <p class="card-detail">The landing page acts as the query surface while generated markdown stays browsable as raw artifacts.</p>
         <div class="card-links">
           <a href="writeups/medium-feed.md">Medium feed</a>
           <a href="writeups/methodology/">Methodology notes</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="signal-strip" aria-label="Operational details">
+      <div class="signal-card">
+        <p class="signal-label">Deploy target</p>
+        <strong>GitHub Pages / root</strong>
+      </div>
+      <div class="signal-card">
+        <p class="signal-label">Content contract</p>
+        <strong><code>MANIFEST.json</code> is the source of truth</strong>
+      </div>
+      <div class="signal-card">
+        <p class="signal-label">Automation</p>
+        <strong>Feed + indexes refresh on push and schedule</strong>
+      </div>
+    </section>
+
+    <section class="workspace-grid" aria-label="Hunting workspace">
+      <article class="workspace-card">
+        <div class="section-head">
+          <h2>Hunter Workspace</h2>
+          <p>Keep this page open beside Burp, notes, or a browser tab while pivoting through reports, writeups, and methodology.</p>
+        </div>
+        <div class="workspace-points">
+          <div class="workspace-point">
+            <p class="signal-label">Side-by-side flow</p>
+            <strong>Search here, hunt there</strong>
+            <p>Quick filters and direct links are tuned for a second monitor or split-screen workflow.</p>
+          </div>
+          <div class="workspace-point">
+            <p class="signal-label">Fast pivots</p>
+            <strong>Source, counts, bytes, destination</strong>
+            <p>Every entry exposes enough metadata to decide whether to open it without context switching.</p>
+          </div>
+          <div class="workspace-point">
+            <p class="signal-label">Reading mode</p>
+            <strong>Listen while triaging</strong>
+            <p>Built-in speech controls can read the current library view or a full category in a podcast-style pass.</p>
+          </div>
+        </div>
+      </article>
+      <article class="workspace-card voice-card">
+        <div class="section-head">
+          <h2>Voice / Podcast Mode</h2>
+          <p>Browser text-to-speech for hands-busy review sessions.</p>
+        </div>
+        <div class="voice-controls">
+          <button class="button primary" type="button" id="read-visible">Read Visible Results</button>
+          <button class="button ghost" type="button" id="read-category">Read Active Category</button>
+          <button class="button ghost" type="button" id="stop-reading">Stop</button>
+        </div>
+        <div class="voice-meta">
+          <label for="voice-rate">Playback Speed</label>
+          <input id="voice-rate" type="range" min="0.8" max="1.35" step="0.05" value="1">
+          <p id="voice-status" class="library-summary">Speech idle</p>
         </div>
       </article>
     </section>
@@ -84,17 +195,66 @@
       </div>
     </section>
 
-    <section class="library-section">
+    <section class="library-section" id="library">
       <div class="section-head">
         <h2>Searchable Library</h2>
         <p>Filter by source name, category, destination, or notes pulled from <code>MANIFEST.json</code>.</p>
+      </div>
+      <div class="filter-row" aria-label="Quick filters">
+        <button class="filter-chip active" type="button" data-filter="all">All</button>
+        <button class="filter-chip" type="button" data-filter="reports">Reports</button>
+        <button class="filter-chip" type="button" data-filter="writeups">Writeups</button>
+        <button class="filter-chip" type="button" data-filter="methodology">Medium / Methodology</button>
       </div>
       <div class="controls">
         <label for="library-search" class="sr-only">Search library</label>
         <input id="library-search" type="search" placeholder="Search reports, writeups, methodology..." autocomplete="off">
       </div>
+      <div class="library-toolbar">
+        <p id="library-summary" class="library-summary">Loading library entries...</p>
+        <a class="toolbar-link" href="GITHUB_PAGES.md">Pages setup</a>
+      </div>
       <div id="library-list" class="library-list" role="list"></div>
       <p id="library-empty" class="empty hidden">No matches for this search.</p>
+    </section>
+
+    <section class="category-section" aria-label="Expanded category views">
+      <div class="section-head">
+        <h2>Expanded Category Views</h2>
+        <p>Everything stays open by default so you can scan full categories without drilling through accordions.</p>
+      </div>
+      <div class="expanded-grid">
+        <article class="expanded-card">
+          <div class="expanded-head">
+            <div>
+              <p class="signal-label">Full category</p>
+              <h3>Reports</h3>
+            </div>
+            <button class="button ghost compact expanded-read" type="button" data-expanded-target="reports-expanded">Read</button>
+          </div>
+          <div id="reports-expanded" class="expanded-list"></div>
+        </article>
+        <article class="expanded-card">
+          <div class="expanded-head">
+            <div>
+              <p class="signal-label">Full category</p>
+              <h3>Writeups</h3>
+            </div>
+            <button class="button ghost compact expanded-read" type="button" data-expanded-target="writeups-expanded">Read</button>
+          </div>
+          <div id="writeups-expanded" class="expanded-list"></div>
+        </article>
+        <article class="expanded-card">
+          <div class="expanded-head">
+            <div>
+              <p class="signal-label">Full category</p>
+              <h3>Medium / Methodology</h3>
+            </div>
+            <button class="button ghost compact expanded-read" type="button" data-expanded-target="methodology-expanded">Read</button>
+          </div>
+          <div id="methodology-expanded" class="expanded-list"></div>
+        </article>
+      </div>
     </section>
   </main>
 
