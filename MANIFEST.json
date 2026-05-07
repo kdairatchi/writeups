@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-07T16:58:22.797977+00:00",
+  "generated_at": "2026-05-07T17:05:04.119406+00:00",
   "sources": {
     "reports/google-vrp": {
       "browse_url": "reports/google-vrp/README.md",
-      "bytes": 175339,
+      "bytes": 175066,
       "category": "reports",
       "description": "Google VRP report exports",
       "dest": "reports/google-vrp",
@@ -17,7 +17,7 @@
     },
     "reports/h1": {
       "browse_url": "reports/h1/README.md",
-      "bytes": 4556690,
+      "bytes": 4542072,
       "category": "reports",
       "description": "HackerOne disclosed report exports",
       "dest": "reports/h1",
@@ -97,7 +97,7 @@
     },
     "writeups/medium-feed": {
       "browse_url": "writeups/medium-feed.md",
-      "bytes": 127127,
+      "bytes": 126970,
       "category": "writeups",
       "description": "Generated Medium RSS feed preserved from the original repo",
       "dest": "writeups/medium-feed.md",
