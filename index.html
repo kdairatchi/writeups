@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medium Writeups Library</title>
+  <meta name="description" content="Bug bounty reports, writeups, and Medium feed library.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">Medium-Writeups Library</p>
+    <h1>Three clear research areas: reports, writeups, and Medium methodology search.</h1>
+    <p class="subhead">
+      Built for GitHub Pages: static, fast, and backed by <code>MANIFEST.json</code> so counts and source descriptions stay in one place.
+    </p>
+    <div class="hero-actions">
+      <a class="button primary" href="#areas">Browse Areas</a>
+      <a class="button ghost" href="MANIFEST.json">View Manifest JSON</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="stats-grid" aria-label="Library overview">
+      <article class="stat-card">
+        <h2>Reports</h2>
+        <p class="value" id="reports-total">-</p>
+        <p class="meta">Mirrored disclosed reports</p>
+      </article>
+      <article class="stat-card">
+        <h2>Writeups</h2>
+        <p class="value" id="writeups-total">-</p>
+        <p class="meta">Writeups and methodology corpus</p>
+      </article>
+      <article class="stat-card">
+        <h2>Total Files</h2>
+        <p class="value" id="all-total">-</p>
+        <p class="meta">All mirrored + generated assets</p>
+      </article>
+    </section>
+
+    <section class="core-grid" id="areas" aria-label="Core areas">
+      <article class="core-card reports-card">
+        <p class="card-kicker">Area 1</p>
+        <h3>Reports</h3>
+        <p>Disclosed report exports from Google VRP, HackerOne, and Immunefi datasets.</p>
+        <div class="card-links">
+          <a href="reports/">Open reports hub</a>
+          <a href="reports/INDEX.md">Source table</a>
+        </div>
+      </article>
+      <article class="core-card writeups-card">
+        <p class="card-kicker">Area 2</p>
+        <h3>Writeups</h3>
+        <p>Curated writeup collections and daily/vertical notes for repeatable patterns.</p>
+        <div class="card-links">
+          <a href="writeups/">Open writeups hub</a>
+          <a href="writeups/INDEX.md">Source table</a>
+        </div>
+      </article>
+      <article class="core-card medium-card">
+        <p class="card-kicker">Area 3</p>
+        <h3>Medium / Methodology / Searchable Library</h3>
+        <p>The third user-facing area combines the generated Medium feed, methodology notes, and browser-side source filtering.</p>
+        <div class="card-links">
+          <a href="writeups/medium-feed.md">Medium feed</a>
+          <a href="writeups/methodology/">Methodology notes</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="area-breakdown" aria-label="Source breakdown">
+      <div class="area-column">
+        <h2>Reports Sources</h2>
+        <div id="reports-sources" class="mini-list"></div>
+      </div>
+      <div class="area-column">
+        <h2>Writeups Sources</h2>
+        <div id="writeups-sources" class="mini-list"></div>
+      </div>
+      <div class="area-column">
+        <h2>Medium + Methodology</h2>
+        <div id="methodology-sources" class="mini-list"></div>
+      </div>
+    </section>
+
+    <section class="library-section">
+      <div class="section-head">
+        <h2>Searchable Library</h2>
+        <p>Filter by source name, category, destination, or notes pulled from <code>MANIFEST.json</code>.</p>
+      </div>
+      <div class="controls">
+        <label for="library-search" class="sr-only">Search library</label>
+        <input id="library-search" type="search" placeholder="Search reports, writeups, methodology..." autocomplete="off">
+      </div>
+      <div id="library-list" class="library-list" role="list"></div>
+      <p id="library-empty" class="empty hidden">No matches for this search.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Generated content source: <a href="scripts/sync_library.py">scripts/sync_library.py</a></p>
+    <p id="generated-at">Last indexed: -</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
