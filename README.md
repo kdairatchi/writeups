@@ -4,7 +4,7 @@ Single repo for kdairatchi's local bug bounty writeups, disclosed reports, metho
 
 ## Start Here
 
-- [Reports](reports/) - disclosed report datasets from `bounty-reports-data`.
+- [Reports](reports/) - disclosed report datasets from `/home/anon/bounty-reports-data`.
 - [Writeups](writeups/) - curated writeup lists and target/platform collections.
 - [Medium/Methodology/Searchable Library](index.html) - the GitHub Pages view for the Medium feed, methodology notes, and manifest-backed search.
 - [reports/INDEX.md](reports/INDEX.md) - source-by-source report inventory.
@@ -16,7 +16,7 @@ Single repo for kdairatchi's local bug bounty writeups, disclosed reports, metho
 - Report files mirrored: 2157
 - Writeup files mirrored: 7
 - Total files mirrored: 2164
-- Generated: `2026-05-07T15:45:17.685953+00:00`
+- Generated: `2026-05-07T15:49:58.533218+00:00`
 
 ## Layout
 
