@@ -16,7 +16,14 @@ const expandedReadEls = Array.from(document.querySelectorAll(".expanded-read"));
 const readVisibleEl = document.getElementById("read-visible");
 const readCategoryEl = document.getElementById("read-category");
 const stopReadingEl = document.getElementById("stop-reading");
+const voiceTestEl = document.getElementById("voice-test");
 const voiceRateEl = document.getElementById("voice-rate");
+const voicePitchEl = document.getElementById("voice-pitch");
+const voiceVolumeEl = document.getElementById("voice-volume");
+const voiceRateValEl = document.getElementById("voice-rate-val");
+const voicePitchValEl = document.getElementById("voice-pitch-val");
+const voiceVolumeValEl = document.getElementById("voice-volume-val");
+const voiceSelectEl = document.getElementById("voice-select");
 const voiceStatusEl = document.getElementById("voice-status");
 const sourceLists = {
   reports: document.getElementById("reports-sources"),
@@ -46,6 +53,16 @@ const fileLabel = (value) => {
   return `${formatNumber(count)} file${count === 1 ? "" : "s"}`;
 };
 
+/** Resolves a GitHub Pages–safe URL (manifest browse_url or heuristic). */
+function browseEntryUrl(entry) {
+  if (entry.browse_url) return entry.browse_url;
+  const dest = entry.dest || "";
+  if (dest.endsWith(".md")) return dest;
+  if (entry.name === "methodology") return `${dest}/index.html`;
+  if (dest) return `${dest}/README.md`;
+  return "#";
+}
+
 function mapCoreSection(entry) {
   if (entry.category === "reports") {
     return "Reports";
@@ -59,21 +76,18 @@ function mapCoreSection(entry) {
   return "Writeups";
 }
 
-function createListItem(entry) {
+function createListItem(entry, index) {
   const item = document.createElement("article");
   item.className = "library-item";
   item.setAttribute("role", "listitem");
+  item.style.setProperty("--stagger", String(Math.min(index ?? 0, 14)));
 
-  const link = entry.dest || "";
-  const tags = [
-    mapCoreSection(entry),
-    fileLabel(entry.files),
-    formatBytes(entry.bytes),
-  ];
+  const href = browseEntryUrl(entry);
+  const tags = [mapCoreSection(entry), fileLabel(entry.files), formatBytes(entry.bytes)];
 
   const heading = document.createElement("h3");
   const anchor = document.createElement("a");
-  anchor.href = link;
+  anchor.href = href;
   anchor.textContent = entry.name || "unnamed";
   heading.appendChild(anchor);
 
@@ -89,9 +103,18 @@ function createListItem(entry) {
     tagWrap.appendChild(chip);
   });
 
+  const openRow = document.createElement("div");
+  openRow.className = "library-item-actions";
+  const openBtn = document.createElement("a");
+  openBtn.className = "library-open-link";
+  openBtn.href = href;
+  openBtn.textContent = "Open";
+  openRow.appendChild(openBtn);
+
   item.appendChild(heading);
   item.appendChild(description);
   item.appendChild(tagWrap);
+  item.appendChild(openRow);
   return item;
 }
 
@@ -107,7 +130,7 @@ function formatTimestamp(value) {
 
 function createMiniLink(entry) {
   const anchor = document.createElement("a");
-  anchor.href = entry.dest || "#";
+  anchor.href = browseEntryUrl(entry);
   anchor.className = "mini-link";
   const name = document.createElement("strong");
   name.textContent = entry.name || "unnamed";
@@ -124,7 +147,8 @@ function createExpandedItem(entry) {
 
   const title = document.createElement("strong");
   const link = document.createElement("a");
-  link.href = entry.dest || "#";
+  const href = browseEntryUrl(entry);
+  link.href = href;
   link.textContent = entry.name || "unnamed";
   title.appendChild(link);
 
@@ -132,11 +156,23 @@ function createExpandedItem(entry) {
   description.textContent = entry.description || "No description provided.";
 
   const meta = document.createElement("p");
-  meta.textContent = `${mapCoreSection(entry)} · ${fileLabel(entry.files)} · ${formatBytes(entry.bytes)} · ${entry.dest || "-"}`;
+  meta.className = "expanded-meta";
+  meta.textContent = `${mapCoreSection(entry)} · ${fileLabel(entry.files)} · ${formatBytes(entry.bytes)}`;
+
+  const destLine = document.createElement("p");
+  destLine.className = "expanded-dest";
+  const destLabel = document.createElement("span");
+  destLabel.textContent = "Open: ";
+  const destA = document.createElement("a");
+  destA.href = href;
+  destA.textContent = href;
+  destLine.appendChild(destLabel);
+  destLine.appendChild(destA);
 
   wrapper.appendChild(title);
   wrapper.appendChild(description);
   wrapper.appendChild(meta);
+  wrapper.appendChild(destLine);
   return wrapper;
 }
 
@@ -179,7 +215,7 @@ function renderList(entries) {
     return;
   }
   emptyEl.classList.add("hidden");
-  entries.forEach((entry) => listEl.appendChild(createListItem(entry)));
+  entries.forEach((entry, index) => listEl.appendChild(createListItem(entry, index)));
 }
 
 function filterEntries(entries, activeFilter, term) {
@@ -197,11 +233,14 @@ function filterEntries(entries, activeFilter, term) {
     if (!matchesFilter) return false;
     if (!term) return true;
 
+    const openUrl = browseEntryUrl(entry);
     const haystack = [
       entry.name,
       entry.category,
       entry.description,
       entry.dest,
+      entry.browse_url,
+      openUrl,
       mapCoreSection(entry),
     ]
       .join(" ")
@@ -229,12 +268,50 @@ function getEntriesByFilter(entries, activeFilter) {
 function buildSpeechText(entries, label) {
   const intro = `${label}. ${entries.length} entries available.`;
   const lines = entries.map((entry, index) => {
-    return `${index + 1}. ${entry.name}. ${entry.description || "No description provided"}. ${fileLabel(entry.files)}. Destination ${entry.dest || "not available"}.`;
+    const url = browseEntryUrl(entry);
+    return `${index + 1}. ${entry.name}. ${entry.description || "No description provided"}. ${fileLabel(entry.files)}. Open ${url}.`;
   });
   return [intro, ...lines].join(" ");
 }
 
+function bindVoiceLabel(rangeEl, valEl, fmt) {
+  if (!rangeEl || !valEl) return;
+  const sync = () => {
+    valEl.textContent = fmt(rangeEl.value);
+  };
+  rangeEl.addEventListener("input", sync);
+  sync();
+}
+
+function getSelectedVoice() {
+  if (!voiceSelectEl || !voiceSelectEl.value) return null;
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find((v) => v.voiceURI === voiceSelectEl.value) || null;
+}
+
+function populateVoiceList() {
+  if (!voiceSelectEl || !("speechSynthesis" in window)) return;
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.filter((v) => v.lang.toLowerCase().startsWith("en"));
+  const list = preferred.length ? preferred : voices;
+  const current = voiceSelectEl.value;
+  voiceSelectEl.innerHTML = '<option value="">Default (system)</option>';
+  list
+    .slice()
+    .sort((a, b) => `${a.name}`.localeCompare(`${b.name}`))
+    .forEach((v) => {
+      const opt = document.createElement("option");
+      opt.value = v.voiceURI;
+      opt.textContent = `${v.name} (${v.lang})`;
+      voiceSelectEl.appendChild(opt);
+    });
+  if (current && [...voiceSelectEl.options].some((o) => o.value === current)) {
+    voiceSelectEl.value = current;
+  }
+}
+
 function speakText(text) {
+  if (!voiceStatusEl) return;
   if (!("speechSynthesis" in window)) {
     voiceStatusEl.textContent = "Speech synthesis is not available in this browser";
     return;
@@ -242,7 +319,13 @@ function speakText(text) {
 
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.rate = Number(voiceRateEl.value || 1);
+  utterance.rate = Number(voiceRateEl?.value || 1);
+  utterance.pitch = Number(voicePitchEl?.value || 1);
+  utterance.volume = Number(voiceVolumeEl?.value ?? 1);
+  const v = getSelectedVoice();
+  if (v) {
+    utterance.voice = v;
+  }
   utterance.onstart = () => {
     voiceStatusEl.textContent = "Speech playing";
   };
@@ -255,7 +338,23 @@ function speakText(text) {
   window.speechSynthesis.speak(utterance);
 }
 
+function wireVoiceChrome() {
+  bindVoiceLabel(voiceRateEl, voiceRateValEl, (v) => Number(v).toFixed(2));
+  bindVoiceLabel(voicePitchEl, voicePitchValEl, (v) => Number(v).toFixed(2));
+  bindVoiceLabel(voiceVolumeEl, voiceVolumeValEl, (v) => `${Math.round(Number(v) * 100)}%`);
+
+  if ("speechSynthesis" in window) {
+    populateVoiceList();
+    window.speechSynthesis.addEventListener("voiceschanged", populateVoiceList);
+  }
+
+  voiceTestEl?.addEventListener("click", () => {
+    speakText("Bug bounty library voice check. Filters and manifest entries use working open links.");
+  });
+}
+
 async function loadManifest() {
+  wireVoiceChrome();
   try {
     const response = await fetch("MANIFEST.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -320,7 +419,7 @@ async function loadManifest() {
       if ("speechSynthesis" in window) {
         window.speechSynthesis.cancel();
       }
-      voiceStatusEl.textContent = "Speech stopped";
+      if (voiceStatusEl) voiceStatusEl.textContent = "Speech stopped";
     });
 
     expandedReadEls.forEach((element) => {
@@ -349,7 +448,7 @@ async function loadManifest() {
     syncStatusEl.textContent = "manifest unavailable";
     heroTotalFilesEl.textContent = "-";
     summaryEl.textContent = "Unable to load library entries";
-    voiceStatusEl.textContent = "Speech unavailable until manifest loads";
+    if (voiceStatusEl) voiceStatusEl.textContent = "Speech unavailable until manifest loads";
     listEl.innerHTML = '<p class="empty">Unable to load MANIFEST.json. Run sync_library.py to regenerate metadata.</p>';
   }
 }

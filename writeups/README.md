@@ -2,14 +2,14 @@
 
 Writeups are separated from disclosed reports: Medium feed intelligence, methodology notes, and curated writeup lists each have their own entry point.
 
-- Files indexed: 7
+- Files indexed: 8
 - Generated from: [`MANIFEST.json`](../MANIFEST.json)
 - Full table: [INDEX.md](INDEX.md)
 
 ## Sources
 
 - [medium-feed](medium-feed.md) - Generated Medium RSS feed preserved from the original repo (1 file, 124.1 KB)
-- [methodology](methodology/) - Methodology notes and wordlists (3 files, 66.7 KB)
+- [methodology](methodology/) - Methodology notes and wordlists (4 files, 69.2 KB)
 - [awesome](awesome/) - Curated bug bounty writeup list (1 file, 77.9 KB)
 - [daily](daily/) - Daily writeup notes (1 file, 2.6 KB)
 - [facebook](facebook/) - Facebook-focused writeups (1 file, 84.5 KB)

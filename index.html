@@ -22,9 +22,10 @@
       </a>
       <nav class="top-nav" aria-label="Primary">
         <a href="#areas">Areas</a>
+        <a href="#docs">Docs</a>
         <a href="#library">Library</a>
-        <a href="reports/">Reports</a>
-        <a href="writeups/">Writeups</a>
+        <a href="reports/index.html">Reports</a>
+        <a href="writeups/index.html">Writeups</a>
       </nav>
       <a class="button ghost compact" href="MANIFEST.json">Manifest</a>
     </div>
@@ -97,7 +98,7 @@
         <p>Disclosed report exports from Google VRP, HackerOne, and Immunefi datasets.</p>
         <p class="card-detail">High-volume mirrored datasets for trend review, triage patterns, and disclosed bug study.</p>
         <div class="card-links">
-          <a href="reports/">Open reports hub</a>
+          <a href="reports/index.html">Open reports hub</a>
           <a href="reports/INDEX.md">Source table</a>
         </div>
       </article>
@@ -107,7 +108,7 @@
         <p>Curated writeup collections and daily/vertical notes for repeatable patterns.</p>
         <p class="card-detail">Focused reading lists, platform-specific notes, and reusable methodology fragments.</p>
         <div class="card-links">
-          <a href="writeups/">Open writeups hub</a>
+          <a href="writeups/index.html">Open writeups hub</a>
           <a href="writeups/INDEX.md">Source table</a>
         </div>
       </article>
@@ -118,23 +119,53 @@
         <p class="card-detail">The landing page acts as the query surface while generated markdown stays browsable as raw artifacts.</p>
         <div class="card-links">
           <a href="writeups/medium-feed.md">Medium feed</a>
-          <a href="writeups/methodology/">Methodology notes</a>
+          <a href="writeups/methodology/index.html">Methodology notes</a>
         </div>
       </article>
     </section>
 
     <section class="signal-strip" aria-label="Operational details">
-      <div class="signal-card">
+      <div class="signal-card signal-card-interactive">
         <p class="signal-label">Deploy target</p>
         <strong>GitHub Pages / root</strong>
+        <p class="signal-hint">Static files only—no Jekyll. <code>.nojekyll</code> at repo root.</p>
       </div>
-      <div class="signal-card">
+      <div class="signal-card signal-card-interactive">
         <p class="signal-label">Content contract</p>
         <strong><code>MANIFEST.json</code> is the source of truth</strong>
+        <p class="signal-hint">Search, hubs, and counts read the same JSON snapshot.</p>
       </div>
-      <div class="signal-card">
+      <div class="signal-card signal-card-interactive">
         <p class="signal-label">Automation</p>
         <strong>Feed + indexes refresh on push and schedule</strong>
+        <p class="signal-hint">Action runs <code>main.go</code> then <code>sync_library.py</code>.</p>
+      </div>
+    </section>
+
+    <section class="docs-section" id="docs" aria-labelledby="docs-heading">
+      <div class="section-head">
+        <h2 id="docs-heading">Documentation</h2>
+        <p>Quick reference for hosting and refreshing this library—no separate doc build (Docusaurus would add a Node pipeline; this stays one-shot static).</p>
+      </div>
+      <div class="docs-grid">
+        <article class="docs-card">
+          <p class="docs-kicker">01</p>
+          <h3>GitHub Pages</h3>
+          <p>Settings → Pages → Deploy from branch <code>main</code> → folder <code>/ (root)</code>. First load may take a minute after push.</p>
+          <a class="docs-link" href="GITHUB_PAGES.md">GITHUB_PAGES.md</a>
+        </article>
+        <article class="docs-card">
+          <p class="docs-kicker">02</p>
+          <h3>Manifest &amp; URLs</h3>
+          <p>Each source has a <code>browse_url</code> that points at a real file (usually <code>README.md</code>) so directory links never 404 on Pages.</p>
+          <a class="docs-link" href="MANIFEST.json">View MANIFEST.json</a>
+        </article>
+        <article class="docs-card">
+          <p class="docs-kicker">03</p>
+          <h3>Refresh locally</h3>
+          <p>Rebuild indexes from the mirror: <code class="docs-code">python3 scripts/sync_library.py</code>. Full copy from corpora: add <code>--copy</code>.</p>
+          <a class="docs-link" href="scripts/sync_library.py">sync_library.py</a>
+        </article>
       </div>
     </section>
 
@@ -164,19 +195,38 @@
       </article>
       <article class="workspace-card voice-card">
         <div class="section-head">
-          <h2>Voice / Podcast Mode</h2>
-          <p>Browser text-to-speech for hands-busy review sessions.</p>
+          <h2>Voice / podcast mode</h2>
+          <p>Uses the Web Speech API (<code>speechSynthesis</code>). Pick a system voice, then shape rate, pitch, and volume.</p>
         </div>
         <div class="voice-controls">
-          <button class="button primary" type="button" id="read-visible">Read Visible Results</button>
-          <button class="button ghost" type="button" id="read-category">Read Active Category</button>
+          <button class="button primary" type="button" id="read-visible">Read visible results</button>
+          <button class="button ghost" type="button" id="read-category">Read active category</button>
           <button class="button ghost" type="button" id="stop-reading">Stop</button>
+          <button class="button ghost" type="button" id="voice-test">Test phrase</button>
         </div>
-        <div class="voice-meta">
-          <label for="voice-rate">Playback Speed</label>
-          <input id="voice-rate" type="range" min="0.8" max="1.35" step="0.05" value="1">
-          <p id="voice-status" class="library-summary">Speech idle</p>
+        <div class="voice-settings" aria-label="Speech settings">
+          <div class="voice-field">
+            <label for="voice-select">Voice</label>
+            <select id="voice-select">
+              <option value="">Default (system)</option>
+            </select>
+          </div>
+          <div class="voice-sliders">
+            <div class="voice-field">
+              <label for="voice-rate">Rate <span id="voice-rate-val" class="voice-val">1</span></label>
+              <input id="voice-rate" type="range" min="0.5" max="1.5" step="0.05" value="1">
+            </div>
+            <div class="voice-field">
+              <label for="voice-pitch">Pitch <span id="voice-pitch-val" class="voice-val">1</span></label>
+              <input id="voice-pitch" type="range" min="0.5" max="1.5" step="0.05" value="1">
+            </div>
+            <div class="voice-field">
+              <label for="voice-volume">Volume <span id="voice-volume-val" class="voice-val">100%</span></label>
+              <input id="voice-volume" type="range" min="0" max="1" step="0.05" value="1">
+            </div>
+          </div>
         </div>
+        <p id="voice-status" class="library-summary voice-status-line" role="status" aria-live="polite">Speech idle</p>
       </article>
     </section>
 

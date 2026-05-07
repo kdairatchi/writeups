@@ -15,6 +15,7 @@
   --writeups: #f2a9d7;
   --methodology: #87d871;
   --shadow: rgba(0, 0, 0, 0.34) 0 20px 60px;
+  --ease-out: cubic-bezier(0.22, 0.99, 0.36, 1);
 }
 
 * {
@@ -32,6 +33,7 @@ body {
   background:
     radial-gradient(circle at top left, rgba(94, 106, 210, 0.18), transparent 30%),
     radial-gradient(circle at 80% 10%, rgba(228, 242, 34, 0.07), transparent 25%),
+    radial-gradient(ellipse 50% 35% at 50% 100%, rgba(107, 211, 255, 0.06), transparent 55%),
     linear-gradient(180deg, var(--bg-2), var(--bg));
   color: var(--text);
   line-height: 1.55;
@@ -254,13 +256,14 @@ h1 {
 }
 
 .button.primary {
-  background: var(--accent);
+  background: linear-gradient(165deg, var(--accent), #c6d420);
   color: #08090a;
   border-color: var(--accent-2);
+  box-shadow: 0 0 0 1px rgba(228, 242, 34, 0.25), 0 4px 24px rgba(228, 242, 34, 0.12);
 }
 
 .button.ghost {
-  background: rgba(255, 255, 255, 0.01);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .button.compact {
@@ -705,6 +708,371 @@ footer p {
   text-decoration: none;
 }
 
+.expanded-meta {
+  margin-top: 0.35rem;
+}
+
+.expanded-dest {
+  font-size: 0.82rem;
+  margin: 0.5rem 0 0;
+  word-break: break-all;
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.expanded-dest a {
+  color: var(--reports);
+}
+
+.expanded-dest a:hover {
+  color: var(--accent);
+}
+
+@keyframes rise-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes border-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.library-item {
+  transition:
+    border-color 0.2s var(--ease-out),
+    transform 0.2s var(--ease-out),
+    box-shadow 0.2s var(--ease-out);
+  animation: rise-fade 0.55s ease backwards;
+  animation-delay: calc(var(--stagger, 0) * 45ms);
+}
+
+.library-item:hover {
+  border-color: rgba(107, 211, 255, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 12px 40px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.library-item:focus-within {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(228, 242, 34, 0.2);
+}
+
+.library-item-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.library-open-link {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+  color: var(--accent);
+  background: rgba(228, 242, 34, 0.06);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.library-open-link:hover {
+  background: rgba(228, 242, 34, 0.12);
+  transform: translateY(-1px);
+}
+
+.core-card {
+  transition: transform 0.2s var(--ease-out), border-color 0.2s ease;
+}
+
+.core-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.signal-card-interactive {
+  transition: border-color 0.2s ease, transform 0.2s var(--ease-out);
+}
+
+.signal-card-interactive:hover {
+  border-color: rgba(228, 242, 34, 0.25);
+  transform: translateY(-2px);
+}
+
+.signal-hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.docs-section {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(22, 23, 24, 0.92), rgba(15, 16, 17, 0.94));
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), var(--shadow);
+  scroll-margin-top: 5.5rem;
+}
+
+.docs-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.docs-card {
+  padding: 1.1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(50, 53, 58, 0.85);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.02), transparent 40%),
+    rgba(11, 12, 15, 0.85);
+  transition: border-color 0.2s ease, transform 0.2s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.docs-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 40%,
+    rgba(228, 242, 34, 0.04) 50%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  animation: border-shimmer 4s linear infinite;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.docs-card:hover {
+  border-color: rgba(107, 211, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.docs-card:hover::before {
+  opacity: 1;
+}
+
+.docs-card h3 {
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+.docs-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.docs-kicker {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--accent-2);
+  margin: 0 0 0.5rem;
+}
+
+.docs-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--reports);
+  text-decoration: none;
+}
+
+.docs-link:hover {
+  color: var(--accent);
+}
+
+.docs-code {
+  font-size: 0.85em;
+}
+
+.hub-main {
+  width: min(1160px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+}
+
+.hub-hero {
+  margin-bottom: 1.5rem;
+}
+
+.hub-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  letter-spacing: -0.05em;
+  margin: 0.25rem 0;
+  max-width: 20ch;
+  line-height: 1.05;
+}
+
+.hub-lead {
+  max-width: 70ch;
+}
+
+.hub-inline-meta {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.hub-inline-meta strong {
+  color: var(--text);
+}
+
+.hub-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.hub-card {
+  padding: 1.15rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(17, 18, 19, 0.96), rgba(13, 14, 15, 0.96));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), var(--shadow);
+  transition: transform 0.2s var(--ease-out), border-color 0.2s ease;
+}
+
+.hub-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(228, 242, 34, 0.22);
+}
+
+.hub-card h3 {
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.hub-card h3 a {
+  text-decoration: none;
+}
+
+.hub-card-desc {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.hub-card-meta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--muted-2);
+}
+
+.hub-card-actions {
+  margin-top: 1rem;
+}
+
+.voice-settings {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.voice-field label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-bottom: 0.35rem;
+}
+
+.voice-val {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.voice-sliders {
+  display: grid;
+  gap: 0.85rem;
+}
+
+#voice-select {
+  width: 100%;
+  min-height: 2.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  background: rgba(11, 12, 15, 0.9);
+  color: var(--text);
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+}
+
+#voice-select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.voice-status-line {
+  margin-top: 1rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(50, 53, 58, 0.6);
+}
+
+#areas,
+#library,
+#docs {
+  scroll-margin-top: 5.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .library-item,
+  .docs-card::before {
+    animation: none;
+  }
+
+  .library-item,
+  .core-card,
+  .signal-card-interactive,
+  .docs-card,
+  .hub-card {
+    transition: none;
+  }
+
+  .library-item:hover,
+  .core-card:hover,
+  .signal-card-interactive:hover,
+  .docs-card:hover,
+  .hub-card:hover {
+    transform: none;
+  }
+}
+
 @media (max-width: 980px) {
   .hero,
   .stats-grid,
@@ -712,7 +1080,8 @@ footer p {
   .signal-strip,
   .area-breakdown,
   .workspace-grid,
-  .expanded-grid {
+  .expanded-grid,
+  .docs-grid {
     grid-template-columns: 1fr;
   }
 

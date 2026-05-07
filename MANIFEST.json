@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-05-07T16:31:17.966211+00:00",
+  "generated_at": "2026-05-07T16:58:22.797977+00:00",
   "sources": {
     "reports/google-vrp": {
-      "bytes": 175066,
+      "browse_url": "reports/google-vrp/README.md",
+      "bytes": 175339,
       "category": "reports",
       "description": "Google VRP report exports",
       "dest": "reports/google-vrp",
@@ -15,7 +16,8 @@
       }
     },
     "reports/h1": {
-      "bytes": 4542072,
+      "browse_url": "reports/h1/README.md",
+      "bytes": 4556690,
       "category": "reports",
       "description": "HackerOne disclosed report exports",
       "dest": "reports/h1",
@@ -29,6 +31,7 @@
       }
     },
     "reports/immunefi-boosts": {
+      "browse_url": "reports/immunefi-boosts/README.md",
       "bytes": 8331444,
       "category": "reports",
       "description": "Immunefi boost reports",
@@ -41,6 +44,7 @@
       }
     },
     "reports/immunefi-past-audits": {
+      "browse_url": "reports/immunefi-past-audits/README.md",
       "bytes": 8331444,
       "category": "reports",
       "description": "Immunefi past audit reports",
@@ -53,6 +57,7 @@
       }
     },
     "writeups/awesome": {
+      "browse_url": "writeups/awesome/README.md",
       "bytes": 79735,
       "category": "writeups",
       "description": "Curated bug bounty writeup list",
@@ -65,6 +70,7 @@
       }
     },
     "writeups/daily": {
+      "browse_url": "writeups/daily/README.md",
       "bytes": 2659,
       "category": "writeups",
       "description": "Daily writeup notes",
@@ -77,6 +83,7 @@
       }
     },
     "writeups/facebook": {
+      "browse_url": "writeups/facebook/README.md",
       "bytes": 86528,
       "category": "writeups",
       "description": "Facebook-focused writeups",
@@ -89,6 +96,7 @@
       }
     },
     "writeups/medium-feed": {
+      "browse_url": "writeups/medium-feed.md",
       "bytes": 127127,
       "category": "writeups",
       "description": "Generated Medium RSS feed preserved from the original repo",
@@ -101,21 +109,23 @@
       }
     },
     "writeups/methodology": {
-      "bytes": 68278,
+      "browse_url": "writeups/methodology/index.html",
+      "bytes": 70872,
       "category": "writeups",
       "description": "Methodology notes and wordlists",
       "dest": "writeups/methodology",
-      "files": 3,
+      "files": 4,
       "name": "methodology",
       "source": "/home/anon/bounty-writeups-data/methodology",
       "suffixes": {
+        ".html": 1,
         ".txt": 3
       }
     }
   },
   "totals": {
-    "all": 2164,
+    "all": 2165,
     "reports": 2157,
-    "writeups": 7
+    "writeups": 8
   }
 }
