@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -99,7 +100,7 @@
         <p class="card-detail">High-volume mirrored datasets for trend review, triage patterns, and disclosed bug study.</p>
         <div class="card-links">
           <a href="reports/index.html">Open reports hub</a>
-          <a href="reports/INDEX.md">Source table</a>
+          <a href="md-viewer.html?file=reports%2FINDEX.md">Source table</a>
         </div>
       </article>
       <article class="core-card writeups-card">
@@ -109,7 +110,7 @@
         <p class="card-detail">Focused reading lists, platform-specific notes, and reusable methodology fragments.</p>
         <div class="card-links">
           <a href="writeups/index.html">Open writeups hub</a>
-          <a href="writeups/INDEX.md">Source table</a>
+          <a href="md-viewer.html?file=writeups%2FINDEX.md">Source table</a>
         </div>
       </article>
       <article class="core-card medium-card">
@@ -118,7 +119,7 @@
         <p>The third user-facing area combines the generated Medium feed, methodology notes, and browser-side source filtering.</p>
         <p class="card-detail">The landing page acts as the query surface while generated markdown stays browsable as raw artifacts.</p>
         <div class="card-links">
-          <a href="writeups/medium-feed.md">Medium feed</a>
+          <a href="md-viewer.html?file=writeups%2Fmedium-feed.md">Medium feed</a>
           <a href="writeups/methodology/index.html">Methodology notes</a>
         </div>
       </article>
@@ -157,7 +158,7 @@
         <article class="docs-card">
           <p class="docs-kicker">02</p>
           <h3>Manifest &amp; URLs</h3>
-          <p>Each source has a <code>browse_url</code> that points at a real file (usually <code>README.md</code>) so directory links never 404 on Pages.</p>
+          <p>Each source has a <code>browse_url</code> that opens Markdown through the static viewer so Pages links stay readable without Jekyll.</p>
           <a class="docs-link" href="MANIFEST.json">View MANIFEST.json</a>
         </article>
         <article class="docs-card">

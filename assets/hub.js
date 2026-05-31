@@ -32,7 +32,7 @@
     art.setAttribute("role", "listitem");
     art.setAttribute("data-name", entry.name || "");
 
-    const href = entry.browse_url || entry.dest || "#";
+    const href = pageUrlFor(entry.browse_url || entry.dest || "#");
     const title = document.createElement("h3");
     const a = document.createElement("a");
     a.href = href;
@@ -60,6 +60,12 @@
     art.appendChild(meta);
     art.appendChild(row);
     return art;
+  }
+
+  function pageUrlFor(path) {
+    if (!path || path === "#" || /^[a-z][a-z0-9+.-]*:/i.test(path)) return path;
+    if (path.endsWith(".md")) return `../md-viewer.html?file=${encodeURIComponent(path)}`;
+    return path.startsWith("../") ? path : `../${path}`;
   }
 
   if (!category || !gridEl) return;

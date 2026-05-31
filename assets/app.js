@@ -53,14 +53,19 @@ const fileLabel = (value) => {
   return `${formatNumber(count)} file${count === 1 ? "" : "s"}`;
 };
 
-/** Resolves a GitHub Pages–safe URL (manifest browse_url or heuristic). */
+/** Resolves a GitHub Pages-safe URL and renders Markdown through the local viewer. */
 function browseEntryUrl(entry) {
-  if (entry.browse_url) return entry.browse_url;
+  if (entry.browse_url) return pageUrlFor(entry.browse_url);
   const dest = entry.dest || "";
-  if (dest.endsWith(".md")) return dest;
+  if (dest.endsWith(".md")) return pageUrlFor(dest);
   if (entry.name === "methodology") return `${dest}/index.html`;
-  if (dest) return `${dest}/README.md`;
+  if (dest) return pageUrlFor(`${dest}/README.md`);
   return "#";
+}
+
+function pageUrlFor(path) {
+  if (!path || !path.endsWith(".md")) return path;
+  return `md-viewer.html?file=${encodeURIComponent(path)}`;
 }
 
 function mapCoreSection(entry) {

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown viewer - Medium Writeups Library</title>
+  <meta name="description" content="Readable GitHub Pages Markdown viewer for library files.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>Medium-Writeups</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="index.html#areas">Home</a>
+        <a href="index.html#library">Library</a>
+        <a href="reports/index.html">Reports</a>
+        <a href="writeups/index.html">Writeups</a>
+      </nav>
+      <a class="button ghost compact" id="raw-markdown-link" href="#">Raw</a>
+    </div>
+  </header>
+
+  <main class="markdown-shell">
+    <header class="markdown-header">
+      <p class="eyebrow">Markdown document</p>
+      <h1 id="markdown-title">Loading...</h1>
+      <p class="subhead" id="markdown-path"></p>
+    </header>
+    <article id="markdown-content" class="markdown-body" aria-live="polite"></article>
+  </main>
+
+  <script src="assets/markdown-viewer.js"></script>
+</body>
+</html>

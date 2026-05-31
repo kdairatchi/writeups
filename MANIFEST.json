@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T22:07:09.487430+00:00",
+  "generated_at": "2026-05-31T22:10:29.547690+00:00",
   "sources": {
     "reports/google-vrp": {
       "browse_url": "reports/google-vrp/README.md",
@@ -110,7 +110,7 @@
     },
     "writeups/methodology": {
       "browse_url": "writeups/methodology/index.html",
-      "bytes": 70872,
+      "bytes": 70945,
       "category": "writeups",
       "description": "Methodology notes and wordlists",
       "dest": "writeups/methodology",
