@@ -2,7 +2,7 @@
 
 Mirrored writeup lists, methodology notes, and the generated Medium feed.
 
-Generated: `2026-07-15T16:08:52.443791+00:00`
+Generated: `2026-07-15T17:40:41.951550+00:00`
 
 | Source | Files | Size | Types | Notes |
 |---|---:|---:|---|---|
