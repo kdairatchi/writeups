@@ -2,11 +2,11 @@
 
 Mirrored writeup lists, methodology notes, and the generated Medium feed.
 
-Generated: `2026-07-23T11:45:59.226485+00:00`
+Generated: `2026-07-23T13:18:19.160855+00:00`
 
 | Source | Files | Size | Types | Notes |
 |---|---:|---:|---|---|
-| [medium-feed](medium-feed.md) | 1 | 122.5 KB | `.md` 1 | Generated Medium RSS feed preserved from the original repo |
+| [medium-feed](medium-feed.md) | 1 | 123.1 KB | `.md` 1 | Generated Medium RSS feed preserved from the original repo |
 | [methodology](methodology/) | 4 | 69.3 KB | `.html` 1, `.txt` 3 | Methodology notes and wordlists |
 | [awesome](awesome/) | 1 | 77.9 KB | `.md` 1 | Curated bug bounty writeup list |
 | [daily](daily/) | 1 | 2.6 KB | `.md` 1 | Daily writeup notes |
