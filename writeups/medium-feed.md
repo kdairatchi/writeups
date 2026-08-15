@@ -1,5 +1,7 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Sat, 15 Aug 2026 09:56:01 GMT | [AI Security and Data Privacy: A New Area of Responsibility for Di...](https://freedium-mirror.cfd/https://medium.com/p/8e7ad5abaf16) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Sat, 15 Aug 2026 09:34:25 GMT | [Nobody Can Tell You If Your Encryption Is Secure](https://freedium-mirror.cfd/https://medium.com/p/b0ceb53e0a84) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Sat, 15 Aug 2026 09:32:04 GMT | [Sol in the shade: benchmarking Opus 4.6 and GPT-5.6 Sol for findi...](https://freedium-mirror.cfd/https://medium.com/p/a5eaf594d1ab) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [cybersecurity](https://medium.com/feed/tag/cybersecurity), [security-research](https://medium.com/feed/tag/security-research) | Yes | Yes |
 | Sat, 15 Aug 2026 09:31:01 GMT | [TryHackMe Walkthrough: Inside a Computer System](https://freedium-mirror.cfd/https://medium.com/p/1b175a600d96) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Sat, 15 Aug 2026 09:28:44 GMT | [Together AI’dan Api Key Nasıl Alınır (2026)](https://freedium-mirror.cfd/https://medium.com/p/dd95e96e56c1) | [api-key](https://medium.com/feed/tag/api-key) | Yes | Yes |
@@ -32,8 +34,6 @@
 | Sat, 15 Aug 2026 06:13:35 GMT | [My Thoughts on Misinformation & Disinformation as a CS Student](https://freedium-mirror.cfd/https://medium.com/p/dd1e2757bed4) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
 | Sat, 15 Aug 2026 06:09:32 GMT | [TryHackMe Walkthrough: OSI Model](https://freedium-mirror.cfd/https://medium.com/p/6cfc1ef8245b) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) | Yes | Yes |
 | Sat, 15 Aug 2026 06:01:01 GMT | [Make Secure VMs the Default with Trusted Launch](https://freedium-mirror.cfd/https://medium.com/p/8562496f4a5e) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
-| Sat, 15 Aug 2026 05:52:43 GMT | [Building a Custom SOC Dashboard: Integrating Grafana with Wazuh (...](https://freedium-mirror.cfd/https://medium.com/p/37711ff0e1f9) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
-| Sat, 15 Aug 2026 05:42:32 GMT | [Reverse Engineering Mobile Binaries with Ghidra and Frida: Readin...](https://freedium-mirror.cfd/https://medium.com/p/58e19154945f) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Sat, 15 Aug 2026 05:41:27 GMT | [MAJINAHANASHI RANSOMWARE: Yet Another Japanese Locker](https://freedium-mirror.cfd/https://medium.com/p/8f10d225b15f) | [hacking](https://medium.com/feed/tag/hacking), [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
 | Sat, 15 Aug 2026 05:35:07 GMT | [The $4 Billion Bookstore That Handed Its Digital Future to Jeff B...](https://freedium-mirror.cfd/https://medium.com/p/881267000212) | [information-technology](https://medium.com/feed/tag/information-technology) | Yes | Yes |
 | Sat, 15 Aug 2026 05:31:01 GMT | [Smali By bithowl: Chapter 6 Smali Naming System](https://freedium-mirror.cfd/https://medium.com/p/93cc0c8bb14a) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) | Yes | Yes |
