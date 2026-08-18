@@ -1,7 +1,9 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Tue, 18 Aug 2026 19:49:09 GMT | [I JUST WANT TO BREATHE](https://freedium-mirror.cfd/https://medium.com/p/ad2ae0a6525c) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
+| Tue, 18 Aug 2026 19:40:16 GMT | [Making Security Scanning Smarter: OWTF’s Intelligent Priority Sch...](https://freedium-mirror.cfd/https://medium.com/p/34a6c941479a) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Tue, 18 Aug 2026 19:32:38 GMT | [Access Control Vulnerabilities: Unprotected Admin Panel](https://freedium-mirror.cfd/https://medium.com/p/de555e36a0b2) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Tue, 18 Aug 2026 19:31:21 GMT | [1. Reflected XSS into HTML context with nothing encoded](https://freedium-mirror.cfd/https://medium.com/p/e9131984ebe8) | [cybersecurity](https://medium.com/feed/tag/cybersecurity), [hacking](https://medium.com/feed/tag/hacking) | Yes | Yes |
+| Tue, 18 Aug 2026 19:31:21 GMT | [1. Reflected XSS into HTML context with nothing encoded](https://freedium-mirror.cfd/https://medium.com/p/e9131984ebe8) | [cybersecurity](https://medium.com/feed/tag/cybersecurity), [hacking](https://medium.com/feed/tag/hacking), [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
 | Tue, 18 Aug 2026 19:23:13 GMT | [Starting a homelab](https://freedium-mirror.cfd/https://medium.com/p/61a8b222f0ec) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Tue, 18 Aug 2026 19:20:30 GMT | [My Journey Towards the Unknown](https://freedium-mirror.cfd/https://medium.com/p/73a539d9c0d3) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Tue, 18 Aug 2026 19:20:14 GMT | [Astro Bypass, AI Token Theft](https://freedium-mirror.cfd/https://medium.com/p/c99273154171) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
@@ -9,7 +11,6 @@
 | Tue, 18 Aug 2026 18:56:01 GMT | [CVE-2026–58231: SAP Commerce Cloud Code Injection Vulnerability](https://freedium-mirror.cfd/https://medium.com/p/8fd1be00aac9) | [vulnerability](https://medium.com/feed/tag/vulnerability), [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Tue, 18 Aug 2026 18:51:56 GMT | [Troubleshooting Wazuh Log Forwarding: Syslog Configuration, Ports...](https://freedium-mirror.cfd/https://medium.com/p/c4dd0fa74cab) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Tue, 18 Aug 2026 18:46:51 GMT | [Who Owns the Policy on What’s Allowed to Enter? The Keyv npm Worm...](https://freedium-mirror.cfd/https://medium.com/p/8dc1e7206d28) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Tue, 18 Aug 2026 18:45:17 GMT | [When Windows Defender Flagged a Legitimate Certificate as Trojan:...](https://freedium-mirror.cfd/https://medium.com/p/8f730bedf73d) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Tue, 18 Aug 2026 18:42:29 GMT | [Cybersecurity Movies: Genre Classics](https://freedium-mirror.cfd/https://medium.com/p/e32a77bd4b59) | [hacking](https://medium.com/feed/tag/hacking) | Yes | Yes |
 | Tue, 18 Aug 2026 18:41:29 GMT | [1. Excessive trust in client-side controls](https://freedium-mirror.cfd/https://medium.com/p/c277939c6a5b) | [hacking](https://medium.com/feed/tag/hacking), [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
 | Tue, 18 Aug 2026 18:26:01 GMT | [Why your tabletop exercise isn’t working](https://freedium-mirror.cfd/https://medium.com/p/d3b68e700839) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
@@ -102,7 +103,6 @@
 | Tue, 18 Aug 2026 05:57:38 GMT | [TheHatman’s Azure Heist: When Stolen Credentials Become a Directo...](https://freedium-mirror.cfd/https://medium.com/p/09f6e7c609e7) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
 | Tue, 18 Aug 2026 05:08:22 GMT | [See What the Browser Can’t: A Beginner’s Guide to Burp Suite](https://freedium-mirror.cfd/https://medium.com/p/976b47871c0e) | [bugs](https://medium.com/feed/tag/bugs) | Yes | Yes |
 | Tue, 18 Aug 2026 05:07:59 GMT | [A Kernel Driver, a Race Condition, and Lazarus: What’s Actually W...](https://freedium-mirror.cfd/https://medium.com/p/4b7c503f26c6) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
-| Tue, 18 Aug 2026 04:55:51 GMT | [The Night I Almost Talked Myself Out of Everything](https://freedium-mirror.cfd/https://medium.com/p/f3ba3273373c) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
 | Tue, 18 Aug 2026 01:06:01 GMT | [I Stopped Asking Claude to Fix My Bugs. I Started Asking It to Pr...](https://freedium-mirror.cfd/https://medium.com/p/a622eb81464b) | [bugs](https://medium.com/feed/tag/bugs) | Yes | Yes |
 | Tue, 18 Aug 2026 00:47:33 GMT | [Introducción a Sliver C2](https://freedium-mirror.cfd/https://medium.com/p/7147bcd9d670) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
 | Wed, 29 Jul 2026 23:59:29 GMT | [How I Found a HIGH-Severity AI Security Issue on Khan Academy’s V...](https://freedium-mirror.cfd/https://medium.com/p/195f46c7ab91) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) | Yes |  |
@@ -425,7 +425,6 @@
 | Mon, 17 Aug 2026 16:06:39 GMT | [Hidden Web Paths: Smart Content Discovery Techniques](https://freedium-mirror.cfd/https://medium.com/p/ea90394eb6e7) | [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) | Yes |  |
 | Mon, 17 Aug 2026 16:05:19 GMT | [Did You Know… Bugs Are Drawn to Your Face at Night?](https://freedium-mirror.cfd/https://medium.com/p/f00881fde280) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
 | Mon, 17 Aug 2026 14:37:52 GMT | [How I Found an Authentication Bypass in a Target’s MCP Server](https://freedium-mirror.cfd/https://medium.com/p/852442072907) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
-| Mon, 17 Aug 2026 14:36:44 GMT | [The window between patch and exploit is gone.](https://freedium-mirror.cfd/https://medium.com/p/e6d4d6a9cded) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes |  |
 | Mon, 17 Aug 2026 13:04:56 GMT | [What Is API Security Testing? A Practical Guide](https://freedium-mirror.cfd/https://medium.com/p/039f90cdfc15) | [application-security](https://medium.com/feed/tag/application-security) | Yes |  |
 | Mon, 17 Aug 2026 13:02:42 GMT | [Business Logic Bugs: When the App Says “You Can’t” — But You Actu...](https://freedium-mirror.cfd/https://medium.com/p/b52d2ada7ffd) | [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) | Yes |  |
 | Mon, 17 Aug 2026 12:27:44 GMT | [Lab: Remote code execution via web shell upload #lab1](https://freedium-mirror.cfd/https://medium.com/p/ea126e3347de) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) | Yes |  |
