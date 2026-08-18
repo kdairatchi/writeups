@@ -1,5 +1,6 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Mon, 17 Aug 2026 23:48:42 GMT | [What to do with an old laptop](https://freedium-mirror.cfd/https://medium.com/p/406710163101) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 17 Aug 2026 23:16:00 GMT | [Why Hardening Your Docker Images Actually Matters (A Practical Wa...](https://freedium-mirror.cfd/https://medium.com/p/58c595a64ec2) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 17 Aug 2026 23:13:30 GMT | [My Dog vs. Elite GDPR Lawyers: The Valve Data Breach Nobody is Ta...](https://freedium-mirror.cfd/https://medium.com/p/f6f7683d813d) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 17 Aug 2026 22:52:21 GMT | [The 10 Best Bug Bounty Tools in 2026 (What Actual Hunters Use for...](https://freedium-mirror.cfd/https://medium.com/p/853d0dac4532) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [cybersecurity](https://medium.com/feed/tag/cybersecurity), [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) | Yes | Yes |
@@ -11,7 +12,6 @@
 | Mon, 17 Aug 2026 22:24:54 GMT | [Why Phishing Still Works on Smart People](https://freedium-mirror.cfd/https://medium.com/p/0daed5024217) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 17 Aug 2026 22:18:21 GMT | [Open, Closed, Filtered: Reading an Nmap Scan Properly](https://freedium-mirror.cfd/https://medium.com/p/5512cc5429ed) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 17 Aug 2026 22:03:26 GMT | [Finder Had Hidden Full Disk Access for Five Years.](https://freedium-mirror.cfd/https://medium.com/p/cf82e76abe33) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Mon, 17 Aug 2026 22:01:03 GMT | [Contain. Rebuild. Transform: What a Root-Level Linux Compromise T...](https://freedium-mirror.cfd/https://medium.com/p/b5a02cddda26) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 17 Aug 2026 21:43:04 GMT | [Everything a Domain Will Tell a Stranger: DNS Enumeration With di...](https://freedium-mirror.cfd/https://medium.com/p/fdf34620380f) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
 | Mon, 17 Aug 2026 20:57:25 GMT | [What I Wish I Knew Before Taking the CompTIA Security+ Exam](https://freedium-mirror.cfd/https://medium.com/p/a8101dc64135) | [information-technology](https://medium.com/feed/tag/information-technology) | Yes | Yes |
 | Mon, 17 Aug 2026 20:55:32 GMT | [Architecting a Custom Purple Team Infrastructure Scanner in Go.](https://freedium-mirror.cfd/https://medium.com/p/2cba8527f395) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
