@@ -1,5 +1,6 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Thu, 20 Aug 2026 22:56:05 GMT | [Cybersecurity Movies: Mainstream Cinema](https://freedium-mirror.cfd/https://medium.com/p/7dd13e828973) | [cybersecurity](https://medium.com/feed/tag/cybersecurity), [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
 | Thu, 20 Aug 2026 22:19:31 GMT | [TryHackMe Walkthrough — PS ECLIPSE](https://freedium-mirror.cfd/https://medium.com/p/545d8cf65212) | [cybersecurity](https://medium.com/feed/tag/cybersecurity), [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
 | Thu, 20 Aug 2026 22:18:14 GMT | [From an SSRF to “Oh no, I own your whole cloud” — How I Built Clo...](https://freedium-mirror.cfd/https://medium.com/p/8602b1fc583b) | [cybersecurity](https://medium.com/feed/tag/cybersecurity), [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
 | Thu, 20 Aug 2026 22:13:46 GMT | [What to Do If You Get Scammed: How to Report Fraud and Protect Yo...](https://freedium-mirror.cfd/https://medium.com/p/840e1f64c283) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
@@ -20,7 +21,6 @@
 | Thu, 20 Aug 2026 20:53:21 GMT | [Brampton Security Guard Agency: 7 Critical Reasons Your Business ...](https://freedium-mirror.cfd/https://medium.com/p/ae520bf30655) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Thu, 20 Aug 2026 20:51:40 GMT | [What Exactly Counts as AI-Generated?](https://freedium-mirror.cfd/https://medium.com/p/c36712a4f798) | [information-technology](https://medium.com/feed/tag/information-technology) | Yes | Yes |
 | Thu, 20 Aug 2026 20:45:01 GMT | [Private Bodyguard in Siesta Key FL: Discreet Personal Protection ...](https://freedium-mirror.cfd/https://medium.com/p/530a626d9f84) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
-| Thu, 20 Aug 2026 20:35:02 GMT | [CYBERSECURITY Why Nigerian Freelancers Are Targets (And How to St...](https://freedium-mirror.cfd/https://medium.com/p/90bfeef97792) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Thu, 20 Aug 2026 20:32:21 GMT | [The Unanswered Questions of Lyme Disease](https://freedium-mirror.cfd/https://medium.com/p/88fbb698327a) | [bugs](https://medium.com/feed/tag/bugs) | Yes | Yes |
 | Thu, 20 Aug 2026 20:30:31 GMT | [Why Every Vibe-Coded App Breaks the Same Way](https://freedium-mirror.cfd/https://medium.com/p/759a1bfcf577) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
 | Thu, 20 Aug 2026 19:57:23 GMT | [Faster, Not Smarter: The Defender’s Half](https://freedium-mirror.cfd/https://medium.com/p/016b35d1175d) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
@@ -105,7 +105,6 @@
 | Thu, 20 Aug 2026 06:10:06 GMT | [Mosquitoes Don’t Like Me](https://freedium-mirror.cfd/https://medium.com/p/6d6ac9275899) | [bugs](https://medium.com/feed/tag/bugs) | Yes | Yes |
 | Thu, 20 Aug 2026 06:03:54 GMT | [SQL Injection to RCE: Understanding the Attack Chain](https://freedium-mirror.cfd/https://medium.com/p/3b9f33ca02dd) | [rce](https://medium.com/feed/tag/rce), [vapt](https://medium.com/feed/tag/vapt) | Yes | Yes |
 | Thu, 20 Aug 2026 05:58:10 GMT | [Vegeta Walkthrough \| Proving Ground Machine \| Oscp Prep](https://freedium-mirror.cfd/https://medium.com/p/e22336409f45) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) | Yes | Yes |
-| Thu, 20 Aug 2026 05:28:38 GMT | [$1,024 for making Discourse choke on one really long draft](https://freedium-mirror.cfd/https://medium.com/p/8f9464a6bd28) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
 | Thu, 20 Aug 2026 05:22:23 GMT | [The SEC’s proposed crypto rulebook](https://freedium-mirror.cfd/https://medium.com/p/45df55a297b5) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) | Yes | Yes |
 | Thu, 20 Aug 2026 05:00:06 GMT | [Operation CameraSwarm: A Technical Analysis of the 14,500-Camera ...](https://freedium-mirror.cfd/https://medium.com/p/43f6a28ec8b4) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) | Yes | Yes |
 | Thu, 20 Aug 2026 04:51:48 GMT | [Vulnerability Classification: Why & How in Security domain](https://freedium-mirror.cfd/https://medium.com/p/ddd762c78501) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
