@@ -1,5 +1,6 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Fri, 21 Aug 2026 19:53:53 GMT | [From Equity to Security: How to Stay Ahead of Global Cybercrime](https://freedium-mirror.cfd/https://medium.com/p/d2d11ff9e88c) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Fri, 21 Aug 2026 19:40:05 GMT | [5.0 Data: The Pillar Everything Else Is For](https://freedium-mirror.cfd/https://medium.com/p/66949357eaa0) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Fri, 21 Aug 2026 19:26:32 GMT | [# Your Browser Isn’t the Privacy Problem. Your Computer Is.](https://freedium-mirror.cfd/https://medium.com/p/4ae3dea20868) | [hacking](https://medium.com/feed/tag/hacking) | Yes | Yes |
 | Fri, 21 Aug 2026 19:26:01 GMT | [What Happens When Reasoning Stops Being Scarce?](https://freedium-mirror.cfd/https://medium.com/p/ab5f8399b86f) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
@@ -9,7 +10,6 @@
 | Fri, 21 Aug 2026 19:10:17 GMT | [Hypotheses About Coexisting with Electronic Intelligence](https://freedium-mirror.cfd/https://medium.com/p/1aa799e2283c) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Fri, 21 Aug 2026 19:09:05 GMT | [The Paradox of the Internet Going Down](https://freedium-mirror.cfd/https://medium.com/p/e90fc82aa9bd) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Fri, 21 Aug 2026 19:01:01 GMT | [An antidote to AI hype: AI agents are not “going rogue”](https://freedium-mirror.cfd/https://medium.com/p/4ab9bbf19298) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Fri, 21 Aug 2026 18:56:10 GMT | [Inside the Kernel: Redefining Endpoint Defense with Octesy Helix ...](https://freedium-mirror.cfd/https://medium.com/p/5692e24ddd14) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Fri, 21 Aug 2026 18:48:07 GMT | [Learning AI Part II — The Math Behind AI: A Refresher for Beginne...](https://freedium-mirror.cfd/https://medium.com/p/cf3f0603c1fb) | [penetration-testing](https://medium.com/feed/tag/penetration-testing), [information-technology](https://medium.com/feed/tag/information-technology) | Yes | Yes |
 | Fri, 21 Aug 2026 18:44:24 GMT | [The Filter Read the Ciphertext Just Fine. It Just Couldn’t Read W...](https://freedium-mirror.cfd/https://medium.com/p/8c6428ff1309) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
 | Fri, 21 Aug 2026 18:40:25 GMT | [Courage Is On the Other Side of Being Ordinary](https://freedium-mirror.cfd/https://medium.com/p/ea54b797b541) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
