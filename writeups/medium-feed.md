@@ -1,5 +1,8 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Mon, 24 Aug 2026 21:08:11 GMT | [What is an IT professional?](https://freedium-mirror.cfd/https://medium.com/p/8de3a055e79c) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
+| Mon, 24 Aug 2026 20:59:48 GMT | [I Planted a Backdoor in a Fraud Detection Model](https://freedium-mirror.cfd/https://medium.com/p/28c0ee4ecfc2) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
+| Mon, 24 Aug 2026 20:46:01 GMT | [Implementing OPA with Terraform the Easy Way](https://freedium-mirror.cfd/https://medium.com/p/de91d8ce3c4c) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 20:35:12 GMT | [Operating System Basics — Part 01](https://freedium-mirror.cfd/https://medium.com/p/defead522127) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 20:28:45 GMT | [FortiGate High Availability: Redundancy Is More Than Buying a Sec...](https://freedium-mirror.cfd/https://medium.com/p/7357f936a1aa) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 20:28:33 GMT | [Ghosts in the Network: Extending Mirai to Understand Modern DDoS ...](https://freedium-mirror.cfd/https://medium.com/p/ac5e057c45da) | [security-research](https://medium.com/feed/tag/security-research) | Yes | Yes |
@@ -13,10 +16,7 @@
 | Mon, 24 Aug 2026 20:00:08 GMT | [The 7 Phases of Cyber Incident Response: A Step-by-Step Guide](https://freedium-mirror.cfd/https://medium.com/p/eacbdb0e1c65) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 19:57:13 GMT | [Your agent should not be as powerful as the person who asked: the...](https://freedium-mirror.cfd/https://medium.com/p/fd3fab7ec02a) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Mon, 24 Aug 2026 19:37:27 GMT | [Every word in AI agent access control, defined twice: once proper...](https://freedium-mirror.cfd/https://medium.com/p/62aa2277482e) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
-| Mon, 24 Aug 2026 19:34:30 GMT | [TI Mindmap Hub \| Weekly Threat Brief — Issue #31](https://freedium-mirror.cfd/https://medium.com/p/8b599babb71b) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 19:19:29 GMT | [How to Breach an Entire Domain Controller Through an Anonymous SM...](https://freedium-mirror.cfd/https://medium.com/p/299be3b83293) | [hacking](https://medium.com/feed/tag/hacking) | Yes | Yes |
-| Mon, 24 Aug 2026 19:18:59 GMT | [Mastering the Terminal: A Deep Dive into Linux Fundamentals (Part...](https://freedium-mirror.cfd/https://medium.com/p/3d49462a86ad) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Mon, 24 Aug 2026 19:18:57 GMT | [Why Does Windows Keep Waking Up by Itself? How to Find What Woke ...](https://freedium-mirror.cfd/https://medium.com/p/d1d5759e8bce) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 19:18:19 GMT | [Gobuster: The Basics — TryHackMe Write-UpIntroduction](https://freedium-mirror.cfd/https://medium.com/p/e3f5f1e7a33a) | [penetration-testing](https://medium.com/feed/tag/penetration-testing), [web-security](https://medium.com/feed/tag/web-security) | Yes | Yes |
 | Mon, 24 Aug 2026 19:17:26 GMT | [Metasploit Scanning and Exploitation: From Reconnaissance to Expl...](https://freedium-mirror.cfd/https://medium.com/p/cd542895ede7) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) | Yes | Yes |
 | Mon, 24 Aug 2026 19:14:44 GMT | [RAG Security Explained: From AI Architecture to AI VAPT Attack Su...](https://freedium-mirror.cfd/https://medium.com/p/4e1ae32c6b82) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
