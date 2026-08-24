@@ -1,5 +1,7 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Mon, 24 Aug 2026 23:00:29 GMT | [localStorage, sessionStorage and cookies: The Auth Token Decision...](https://freedium-mirror.cfd/https://medium.com/p/0d0b90fcd7c2) | [web-security](https://medium.com/feed/tag/web-security) | Yes | Yes |
+| Mon, 24 Aug 2026 22:51:01 GMT | [The Snitch in Your Pocket](https://freedium-mirror.cfd/https://medium.com/p/29a049d3913e) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 22:45:05 GMT | [Corporate Fraud Is Real: Validating Concerns and Strengthening Or...](https://freedium-mirror.cfd/https://medium.com/p/67df5edc1f32) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 22:30:41 GMT | [How to Create App Password for Gmail](https://freedium-mirror.cfd/https://medium.com/p/ada27d196623) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 22:30:27 GMT | [An AI Invented Fake People to Trick a Real Human Into Approving I...](https://freedium-mirror.cfd/https://medium.com/p/cef402b3cd2a) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
@@ -12,7 +14,6 @@
 | Mon, 24 Aug 2026 22:03:16 GMT | [Windows Registry Forensics: Winlogon vs LogonUI](https://freedium-mirror.cfd/https://medium.com/p/69d5ed235e19) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 22:01:21 GMT | [Claviculário para 120 Chaves: Como Organizar e Controlar Chaves e...](https://freedium-mirror.cfd/https://medium.com/p/6443283b8a47) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Mon, 24 Aug 2026 21:41:09 GMT | [Uygulamalı Layer 2 Saldırıları: Layer2PoC #4:ARP Spoofing& Layer2...](https://freedium-mirror.cfd/https://medium.com/p/71cd375bae4f) | [security](https://medium.com/feed/tag/security), [cybersecurity](https://medium.com/feed/tag/cybersecurity), [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
-| Mon, 24 Aug 2026 21:37:46 GMT | [Computer & Office Management for Modern Workplaces](https://freedium-mirror.cfd/https://medium.com/p/b9956462a612) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 21:08:11 GMT | [What is an IT professional?](https://freedium-mirror.cfd/https://medium.com/p/8de3a055e79c) | [information-technology](https://medium.com/feed/tag/information-technology) | Yes | Yes |
 | Mon, 24 Aug 2026 20:28:33 GMT | [Ghosts in the Network: Extending Mirai to Understand Modern DDoS ...](https://freedium-mirror.cfd/https://medium.com/p/ac5e057c45da) | [security-research](https://medium.com/feed/tag/security-research) | Yes | Yes |
 | Mon, 24 Aug 2026 20:21:34 GMT | [These sites can steal your data …](https://freedium-mirror.cfd/https://medium.com/p/1981f1b2b8bc) | [hacking](https://medium.com/feed/tag/hacking), [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) | Yes | Yes |
@@ -304,7 +305,6 @@
 | Sun, 23 Aug 2026 17:24:14 GMT | [Hack The Box — Langflow RCE Write-up](https://freedium-mirror.cfd/https://medium.com/p/d1b44e381498) | [web-security](https://medium.com/feed/tag/web-security), [rce](https://medium.com/feed/tag/rce) | Yes |  |
 | Sun, 23 Aug 2026 16:26:01 GMT | [Clean Up Malicious User Uploads in Laravel](https://freedium-mirror.cfd/https://medium.com/p/bfde84ab5913) | [file-upload](https://medium.com/feed/tag/file-upload) | Yes |  |
 | Sun, 23 Aug 2026 16:18:39 GMT | [PostgreSQL injection, Dumping data, Privileges, reading files and...](https://freedium-mirror.cfd/https://medium.com/p/9c4c464e9d71) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) | Yes |  |
-| Sun, 23 Aug 2026 15:24:26 GMT | [Burp Repeater, Decoder, and Comparer: Resend, Re-encode, and Diff...](https://freedium-mirror.cfd/https://medium.com/p/2ee34d992aa8) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
 | Sun, 23 Aug 2026 15:08:26 GMT | [You Can’t Become a Great Bug Bounty Hunter Without Understanding ...](https://freedium-mirror.cfd/https://medium.com/p/5825e162fe6d) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
 | Sun, 23 Aug 2026 13:01:02 GMT | [How an Unsanitized Header Generated a $6,000 Bounty via Cache Poi...](https://freedium-mirror.cfd/https://medium.com/p/da7757cc6f18) | [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) | Yes |  |
 | Sun, 23 Aug 2026 12:37:44 GMT | [How I Hacked A Telecom Company](https://freedium-mirror.cfd/https://medium.com/p/edc5455e4443) | [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) | Yes |  |
