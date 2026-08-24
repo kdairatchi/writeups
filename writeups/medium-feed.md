@@ -1,5 +1,6 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Mon, 24 Aug 2026 22:01:21 GMT | [Claviculário para 120 Chaves: Como Organizar e Controlar Chaves e...](https://freedium-mirror.cfd/https://medium.com/p/6443283b8a47) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Mon, 24 Aug 2026 21:41:09 GMT | [Uygulamalı Layer 2 Saldırıları: Layer2PoC #4:ARP Spoofing& Layer2...](https://freedium-mirror.cfd/https://medium.com/p/71cd375bae4f) | [security](https://medium.com/feed/tag/security), [cybersecurity](https://medium.com/feed/tag/cybersecurity), [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
 | Mon, 24 Aug 2026 21:37:46 GMT | [Computer & Office Management for Modern Workplaces](https://freedium-mirror.cfd/https://medium.com/p/b9956462a612) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Mon, 24 Aug 2026 21:20:29 GMT | [Testing Persistence with Atomic Red Team: The Qakbot Scheduled Ta...](https://freedium-mirror.cfd/https://medium.com/p/84bc78c84e7d) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
@@ -46,7 +47,6 @@
 | Mon, 24 Aug 2026 15:59:10 GMT | [Cheating to Win: Inside the AI That Hacked a Real Server to Pass ...](https://freedium-mirror.cfd/https://medium.com/p/d120de052c65) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Mon, 24 Aug 2026 15:57:20 GMT | [The Scammers Among Us](https://freedium-mirror.cfd/https://medium.com/p/e922e3479e95) | [hacking](https://medium.com/feed/tag/hacking) | Yes | Yes |
 | Mon, 24 Aug 2026 15:56:42 GMT | [Why BSidesLV Felt Like Old-School DEF CON](https://freedium-mirror.cfd/https://medium.com/p/6d694195c8e9) | [security](https://medium.com/feed/tag/security), [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
-| Mon, 24 Aug 2026 15:52:58 GMT | [The Sandbox SAND Bridge Exploit: A Technical Deep Dive into the a...](https://freedium-mirror.cfd/https://medium.com/p/b2b78341b31c) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Mon, 24 Aug 2026 15:49:08 GMT | [A Single Full Stop: Solving PortSwigger’s “Username Enumeration v...](https://freedium-mirror.cfd/https://medium.com/p/b3a0d69eaad5) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
 | Mon, 24 Aug 2026 15:39:58 GMT | [Stop saying that’s not real](https://freedium-mirror.cfd/https://medium.com/p/534b88485ae8) | [information-technology](https://medium.com/feed/tag/information-technology) | Yes | Yes |
 | Mon, 24 Aug 2026 15:37:24 GMT | [How I’d Learn Ethical Hacking From Scratch in 2026 (If I Had to S...](https://freedium-mirror.cfd/https://medium.com/p/9b060c57a3d7) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking), [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) | Yes | Yes |
