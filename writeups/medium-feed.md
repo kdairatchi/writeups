@@ -1,5 +1,6 @@
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Tue, 25 Aug 2026 19:40:38 GMT | [The AI Vulnerability Tidal Wave](https://freedium-mirror.cfd/https://medium.com/p/d08d6a81913e) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Tue, 25 Aug 2026 19:22:57 GMT | [Finding Sensitive Backend Information Through GraphQL Errors](https://freedium-mirror.cfd/https://medium.com/p/72f82ad2c27b) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) | Yes | Yes |
 | Tue, 25 Aug 2026 19:22:53 GMT | [TryHackMe \| Summit Challenge Walk-Through](https://freedium-mirror.cfd/https://medium.com/p/173c7b3e4fa1) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
 | Tue, 25 Aug 2026 19:21:38 GMT | [Attack Surface to System Compromise \| A Technical Walkthrough of...](https://freedium-mirror.cfd/https://medium.com/p/b9e7665036b2) | [cybersecurity](https://medium.com/feed/tag/cybersecurity), [hacking](https://medium.com/feed/tag/hacking) | Yes | Yes |
@@ -54,7 +55,6 @@
 | Tue, 25 Aug 2026 15:48:25 GMT | [Nobody Wants to Think About This — But Here’s Why I Finally](https://freedium-mirror.cfd/https://medium.com/p/34bae84d8c24) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Tue, 25 Aug 2026 15:47:54 GMT | [Cuando un agente cruza el límite: Nuevas fronteras de la segurida...](https://freedium-mirror.cfd/https://medium.com/p/7ab2c0682159) | [hacking](https://medium.com/feed/tag/hacking), [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) | Yes | Yes |
 | Tue, 25 Aug 2026 15:45:21 GMT | [Power Supply Write-Up(AI/ML)](https://freedium-mirror.cfd/https://medium.com/p/8f20eff9288b) | [hacking](https://medium.com/feed/tag/hacking), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) | Yes | Yes |
-| Tue, 25 Aug 2026 15:41:50 GMT | [What If Cloud wasn’t a place to Sync, but a Place to Store?](https://freedium-mirror.cfd/https://medium.com/p/dde745766be0) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
 | Tue, 25 Aug 2026 15:27:30 GMT | [Microsoft’s Account Recovery Is Security Theater](https://freedium-mirror.cfd/https://medium.com/p/bed708a8f535) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
 | Tue, 25 Aug 2026 15:20:49 GMT | [Keeping Up With Technology Without Getting Lost in the Noise](https://freedium-mirror.cfd/https://medium.com/p/07a200b93050) | [information-technology](https://medium.com/feed/tag/information-technology) | Yes | Yes |
 | Tue, 25 Aug 2026 15:16:01 GMT | [Cool things to actually automate in your security environment (th...](https://freedium-mirror.cfd/https://medium.com/p/65d96be7e397) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
