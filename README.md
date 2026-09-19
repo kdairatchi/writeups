@@ -1,10 +1,10 @@
 # Bug Bounty Writeups & Reports Library
 
-Single repo for kdairatchi's local bug bounty writeups, disclosed reports, methodology notes, and Medium feed tracking.
+Single repo bug bounty writeups, disclosed reports, methodology notes, and Medium feed tracking.
 
 ## Start Here
 
-- [Reports](reports/index.html) - disclosed report datasets from `/home/anon/bounty-reports-data`.
+- [Reports](reports/index.html) - disclosed report datasets from `/home/<USER>/bounty-reports-data`.
 - [Writeups](writeups/index.html) - curated writeup lists and target/platform collections.
 - [Medium/Methodology/Searchable Library](index.html) - the GitHub Pages view for the Medium feed, methodology notes, and manifest-backed search.
 - [reports/INDEX.md](reports/INDEX.md) - source-by-source report inventory.
