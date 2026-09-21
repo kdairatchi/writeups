@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T23:31:33.766778+00:00",
+  "generated_at": "2026-09-21T01:36:45.234048+00:00",
   "sources": {
     "reports/google-vrp": {
       "browse_url": "reports/google-vrp/README.md",
@@ -97,7 +97,7 @@
     },
     "writeups/medium-feed": {
       "browse_url": "writeups/medium-feed.md",
-      "bytes": 124759,
+      "bytes": 125382,
       "category": "writeups",
       "description": "Generated Medium RSS feed preserved from the original repo",
       "dest": "writeups/medium-feed.md",
